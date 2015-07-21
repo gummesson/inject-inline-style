@@ -1,6 +1,6 @@
 {
   "name": "inject-inline-style",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Inject an object as an inline CSS string.",
   "main": "index.js",
   "files": [
