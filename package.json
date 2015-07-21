@@ -1,0 +1,43 @@
+{
+  "name": "inject-inline-style",
+  "version": "0.0.0",
+  "description": "Inject an object as an inline CSS string.",
+  "main": "index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gummesson/inject-inline-style.git"
+  },
+  "keywords": [
+    "browser",
+    "css",
+    "style",
+    "inline",
+    "inject"
+  ],
+  "author": "Ellen Gummesson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gummesson/inject-inline-style/issues"
+  },
+  "homepage": "https://github.com/gummesson/inject-inline-style",
+  "dependencies": {
+    "inline-style": "^1.0.0",
+    "insert-css": "^0.2.0"
+  },
+  "devDependencies": {
+    "browserify": "^11.0.0",
+    "smokestack": "^3.3.0",
+    "tap-closer": "^1.0.0",
+    "tape": "^4.0.1"
+  },
+  "scripts": {
+    "test": "npm run test:browser",
+    "test:browser": "browserify test/ | tap-closer | smokestack",
+    "test:browser:firefox": "npm test -- -b firefox"
+  }
+}
