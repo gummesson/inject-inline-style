@@ -19,7 +19,7 @@ module.exports = injectStyle
  */
 
 function injectStyle(obj) {
-  if (!obj) return null
+  if (!obj) return ''
 
   var selectors = Object.keys(obj)
 

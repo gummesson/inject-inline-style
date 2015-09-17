@@ -12,7 +12,7 @@ var injectStyle = require('../')
 test('injectStyle([obj])', function(t) {
   t.test('injectStyle()', function(assert) {
     var style = injectStyle()
-    assert.equal(style, null)
+    assert.equal(style, '')
     assert.end()
   })
 
