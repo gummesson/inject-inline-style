@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/gummesson/inject-inline-style",
   "dependencies": {
-    "inline-style": "^1.0.0",
+    "inline-style": "^2.0.0",
     "insert-css": "^0.2.0"
   },
   "devDependencies": {
