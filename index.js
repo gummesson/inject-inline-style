@@ -22,13 +22,12 @@ function injectStyle(obj) {
   if (!obj) return null
 
   var selectors = Object.keys(obj)
-  var styles = []
 
-  selectors.forEach(function(key) {
+  var styles = selectors.map(function(key) {
     var selector = obj[key]
     var style = inlineStyle(selector)
     var inline = key.concat('{').concat(style).concat('}')
-    styles.push(inline)
+    return inline
   })
 
   var results = styles.join('')
